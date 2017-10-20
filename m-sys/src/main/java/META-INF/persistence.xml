@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="http://java.sun.com/xml/ns/persistence" version="2.0">
+
+    <persistence-unit name="NewPersistenceUnit">
+        <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
+        <class>com.m.health.entity.AcountingUnit</class>
+        <class>com.m.health.entity.MenuDict</class>
+        <class>com.m.health.entity.ModuleDict</class>
+        <class>com.m.health.entity.ModuleVsUser</class>
+        <class>com.m.health.entity.RoleDict</class>
+        <class>com.m.health.entity.RoleVsMenu</class>
+        <class>com.m.health.entity.RoleVsUser</class>
+        <class>com.m.health.entity.User</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/his"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.username" value=""/>
+            <property name="hibernate.connection.password" value=""/>
+            <property name="hibernate.archive.autodetection" value="class"/>
+            <property name="hibernate.show_sql" value="true"/>
+            <property name="hibernate.format_sql" value="true"/>
+            <property name="hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
